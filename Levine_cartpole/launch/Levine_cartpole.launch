@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find invpend_gazebo)/launch/invpend_world.launch"/>
+    <include file="$(find invpend_control)/launch/invpend_control.launch"/>
+    <node name="Levine_cartpole" pkg="Levine_cartpole" type="cart_pole.py" output="screen"/>
+</launch>
+
